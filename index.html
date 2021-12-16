@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="AIassignment.js" type="text/javascript"></script>
+    <script src="Canvas.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="AIassignment.css" type="text/css">
+
+    <!-- Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+    
+</head>
+<body>
+    <div id="buttonWrapper"><button id="StartButton" type=button onclick="processSelect()">Click Me!</button></div>
+    <a href="./Tutorial/Tutorial.html">Demonstration</a>
+    <div id="TeacherIconFrame">
+        <div class="HandIcon"></div>
+    </div>
+    <div id="JudgeIconFrame">
+        <div class="HandIcon"></div>
+    </div>
+    <canvas id="DetectChart" width="900" height="300">
+        図形を表示するには、canvasタグをサポートしたブラウザが必要です。
+    </canvas>
+    <br>
+    <div class="DataLabel">
+        Detection
+    </div>
+    <div class="DataLabel">
+        Level
+    </div>
+    <div class="DataLabel">
+        Life
+    </div>
+    <div id="ResultDisplay">
+        <div style="font-size:50px;">
+            <div id="ResultDisplayTitle">
+                Result
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

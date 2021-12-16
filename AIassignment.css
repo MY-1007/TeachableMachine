@@ -1,0 +1,126 @@
+body{
+    background-color:black;
+    width:100vw;
+    text-align:center;
+}
+a:visited{
+    color:yellow;
+}
+a:link{
+    color:yellow;
+}
+a:hover{
+    color:white
+}
+a:active{
+    color:white;
+}
+#StartButton{
+    margin-left:auto;
+    margin-right:auto;
+    border:white solid 1px;
+    font-size:25px;
+    padding:5px 20px 5px 20px;
+    background-color:black;
+    color:white;
+}
+#TeacherIconFrame{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    position:relative;
+    width:0px;
+    height:0px;
+    border:white solid 2px;
+}
+#JudgeIconFrame{
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    position:relative;
+    width:0px;
+    height:0px;
+    border:white solid 2px;
+}
+.GoodIcon{
+    background-size:100px;
+    background-color:black;
+    background-image:url(./img/Good.jpg);
+}
+.BadIcon{
+    background-size:100px;
+    background-color:black;
+    background-image:url(./img/Bad.jpg);
+}
+.HandIcon{
+    background-size:100px;
+    background-color:black;
+    background-image:url(./img/Icon_c.jpg);
+}
+.ShIcon{
+    background-size:100px;
+    background-color:black;
+    background-image:url(./img/Icon_s.jpg);
+}
+.WhistleIcon{
+    background-size:100px;
+    background-color:black;
+    background-image:url(./img/Icon_w.jpg);
+}
+.Icon{
+    border:1px solid white;
+    box-sizing:border-box;
+    display:inline-block;
+    position:relative;
+    padding:0px;
+    margin:0px;
+    width:100px;height:100px;
+}
+.SlideBar{
+    display:inline-block;
+    position:absolute;
+    z-index:50;
+    height:100px;
+    width:0px;
+    border-left:white solid 5px;
+    top:0px;
+}
+#DetectChart{
+    background-color:black;
+    border:white solid 1px;
+}
+#display{
+    color:white;
+}
+#display2{
+    color:white;
+}
+.DataLabel{
+    margin:0px;
+    font-size:25px;
+    width:300px;
+    display:inline-block;
+    color:white;
+}
+#ResultDisplay{
+    border:black solid 5px;
+    font-size:40px;
+    pointer-events:none;
+    position:absolute;
+    z-index:100;
+    width:500px;
+    height:300px;
+    left:calc(50vw - 250px);
+    top:100px;
+    background-color:white;
+    transition-property:opacity;
+    transition-duration:1s;
+    opacity:0;
+}
+.ResultShow{
+    pointer-events:auto;
+}
+#ResultDisplayTitle{
+    font-size:50px;
+}
