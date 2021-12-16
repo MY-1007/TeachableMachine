@@ -1,0 +1,55 @@
+body{
+    background-color:black;
+    color:white;
+    position:relative;
+}
+a:visited{
+    color:yellow;
+}
+a:link{
+    color:yellow;
+}
+a:hover{
+    color:white
+}
+a:active{
+    color:white;
+}
+.Title{
+    font-size:30px;
+}
+.AudioWrapper{
+    padding:20px;
+    margin:20px;
+    border:white solid 1px;
+    width:300px;
+}
+#Icon_s{
+    width:100px;height:100px;
+    background-size:100px;
+    background-color:black;
+    background-image:url(../img/Icon_s.jpg);
+}
+#Icon_w{
+    width:100px;height:100px;
+    background-size:100px;
+    background-color:black;
+    background-image:url(../img/Icon_w.jpg);
+}
+#Icon_c{
+    width:100px;height:100px;
+    background-size:100px;
+    background-color:black;
+    background-image:url(../img/Icon_c.jpg);
+}
+#WholeAudioWrapper{
+    display:inline-block;
+}
+#CanvasDisplayWrapper{
+    display:inline-block;
+}
+#DetectChart{
+    background-color:black;
+    border:white solid 1px;
+    /* position:absolute;top:10px; */
+}
